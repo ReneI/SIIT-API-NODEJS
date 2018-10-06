@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3b3bbef7-6a02-4587-a63f-501b6a334689" name="Default Changelist" comment="" />
+    <list default="true" id="3b3bbef7-6a02-4587-a63f-501b6a334689" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/server/models/usuario.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/routes/usuarios.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/server.js" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -15,75 +24,69 @@
     <session id="2020400578">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.14" value="1" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.37" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gitignore" value="1" />
-          <entry key="js" value="4" />
-          <entry key="json" value="1" />
+          <entry key="js" value="8" />
+          <entry key="json" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JSON" value="1" />
-          <entry key="JavaScript" value="4" />
+          <entry key="JSON" value="2" />
+          <entry key="JavaScript" value="8" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="gitignore" value="14" />
-          <entry key="js" value="611" />
+          <entry key="gitignore" value="15" />
+          <entry key="js" value="2382" />
           <entry key="json" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JSON" value="29" />
-          <entry key="JavaScript" value="611" />
-          <entry key="PLAIN_TEXT" value="14" />
+          <entry key="JavaScript" value="2382" />
+          <entry key="PLAIN_TEXT" value="15" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/server.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+            <state relative-caret-position="68">
+              <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
+        <entry file="file://$PROJECT_DIR$/server/models/usuario.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="12" selection-start-column="12" selection-end-column="12" />
+            <state relative-caret-position="-710">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/routes/usuarios.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="205">
+              <caret line="82" column="9" lean-forward="true" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -91,7 +94,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/config/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="34">
               <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
@@ -109,13 +112,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/server/config/config.js" />
-        <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/server/views.js" />
+        <option value="$PROJECT_DIR$/server/routes/usuario.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/server/server.js" />
+        <option value="$PROJECT_DIR$/server/routes/usuarios.js" />
+        <option value="$PROJECT_DIR$/server/models/usuario.js" />
       </list>
     </option>
   </component>
@@ -136,16 +147,17 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
-    <option name="width" value="624" />
-    <option name="height" value="745" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="754" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -153,10 +165,22 @@
               <item name="node-restServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="node-restServer" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="node-restServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node-restServer" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="node-restServer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="node-restServer" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="routes" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -188,23 +212,22 @@
       <option name="presentableId" value="Default" />
       <updated>1538683269669</updated>
       <workItem from="1538683272147" duration="6718000" />
+      <workItem from="1538695241787" duration="14708000" />
+      <workItem from="1538742784680" duration="2363000" />
+      <workItem from="1538786945389" duration="2173000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6718000" />
+    <option name="totallyTimeSpent" value="25962000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="624" height="745" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info id="npm" side_tool="true" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.38566554" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.140625" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.20915033" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -212,6 +235,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.31400967" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -224,34 +251,12 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/config/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/views.js" />
+    <entry file="file://$PROJECT_DIR$/server/routes/usuario.js" />
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -259,6 +264,44 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="12" selection-start-column="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="25" lean-forward="true" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/config/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/usuarios.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="82" column="9" lean-forward="true" selection-start-line="82" selection-start-column="9" selection-end-line="82" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/models/usuario.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-710">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>

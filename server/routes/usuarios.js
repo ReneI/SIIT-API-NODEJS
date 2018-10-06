@@ -13,7 +13,7 @@ app.get('/usuario', function(req, res) {
     let hasta=req.query.hasta || 6;
     hasta=Number(hasta);
 
-        Usuario.find({estado:true}).skip(desde).limit(hasta)
+        Usuario.find({}).skip(desde).limit(hasta)
             .exec((err,usuarios)=>{
 
                 if(err){

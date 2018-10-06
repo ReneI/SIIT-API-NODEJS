@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(require('./routes/usuarios'));
 
 
-mongoose.connect('mongodb://localhost:27017/cafe',(err,res)=>{
+mongoose.connect(process.env.urlDB,(err,res)=>{
     if(err) throw err;
     console.log('Conectado con exito');
 

@@ -1,2 +1,61 @@
-# SIIT-API-NODEJS
+
+ SIIT-API-NODEJS
+
+Modelo 
+-------------------
+
+ - Matricula
+ - password (con encriptacion) sin posibilidad de hacer update del
+   password por el momento.
+ - Email
+ - google (token para inicio de sesion con cuenta de google)
+ - img
+ - role (ADMIN ALUM MASTER) sin posibilidad de hacer update
+
+--------------------
+
 ## Guia de uso
+
+ En servidor a produccion https://noddgoey.herokuapp.com/usuario/:id
+ uso del servicio mlab y amazon aws para prueba con mongodb
+ ### get
+ {{url}}/usuario?desde=2&hasta=10
+ regresas los usuarios y total de usuarios
+ ###  post
+ 
+ {{url}}/usuario/:id
+ ## put
+  
+ {{url}}/usuario/:id
+'
+ 
+
+### delete 
+cambiar la bandera de estado a false, permite no se debe eliminar registros solamente cambiar de true a false ya
+romperia la caracteristica de integridad
+
+# Siguientes cambios
+Los demas modelos
+Token de sesion 
+#### expiracion de la sesion 
+
+
+
+
+
+
+
+## Regex 
+
+Para validaciones
+
+> **Tip:**  Usar reglas de validacion tanto en el cliente como en el servidor **para tener seguridad**
+
+|                |explicacion |Regex|
+|----------------|-------------------------------|-----------------------------|
+|Correo|`'Correo del tecnologico de durango'`            |''            |
+|password          |`"password de 4 digitos"`            |"Isnthi"            |
+|Matricula|  10 caracteres| 
+
+
+

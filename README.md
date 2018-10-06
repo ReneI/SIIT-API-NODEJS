@@ -6,11 +6,11 @@ Modelo
 
  - Matricula
  - password (con encriptacion) sin posibilidad de hacer update del
-   password por el momento.
+   password por el momento por seguridad solamente con un token.
  - Email
  - google (token para inicio de sesion con cuenta de google)
  - img
- - role (ADMIN ALUM MASTER) sin posibilidad de hacer update
+ - role (ADMIN, ALUM, MASTER) sin posibilidad de hacer update sin token
 
 --------------------
 
@@ -18,11 +18,16 @@ Modelo
 
  En servidor a produccion https://noddgoey.herokuapp.com/usuario/:id
  uso del servicio mlab y amazon aws para prueba con mongodb
+ 
+ ![database](https://github.com/ReneI/SIIT-API-NODEJS/blob/master/Guide/database.PNG?raw=true)
  ### get
  {{url}}/usuario?desde=2&hasta=10
+ ![get](https://github.com/ReneI/SIIT-API-NODEJS/blob/master/Guide/get.PNG?raw=true)
+ ![get](https://github.com/ReneI/SIIT-API-NODEJS/blob/master/Guide/postman.PNG?raw=true)
  regresas los usuarios y total de usuarios
  ###  post
- 
+ ![Screenshot](https://github.com/ReneI/SIIT-API-NODEJS/blob/master/Guide/post.PNG?raw=true)
+
  {{url}}/usuario/:id
  ## put
   

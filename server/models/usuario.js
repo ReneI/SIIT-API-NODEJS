@@ -7,7 +7,8 @@ const someOtherPlaintextPassword = 'not_bacon';
 const validator = require('mongoose-unique-validator');
 
 
-let rolesValidos={values: ['ADMIN','ALUM','MASTER'], message:'{value}no es un rol valido'};
+let rolesValidos={
+    values: ['ADMIN', 'ALUM', 'MASTER'], message:'{value} no es un rol valido'};
 
 
 let usuarioSchema=new Schema({
@@ -41,13 +42,14 @@ let usuarioSchema=new Schema({
         required:false
 
     },  // No es obligatorio
-    roles:{
+    role:{
+            default:'ALUM',
             type:String,
         required:true,
         enum:rolesValidos
 
     },  // default user role
-    state:{
+    estado:{
             type:Boolean,
          required:false
     },

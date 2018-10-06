@@ -1,12 +1,43 @@
 const express = require('express');
 const app = express();
 const Usuario = require('../models/usuario');
+const _ = require('underscore');
 
 const bcrypt = require('bcryptjs');
 const saltRounds = 10;
 
 app.get('/usuario', function(req, res) {
-    res.json('Get Usuario')
+
+    let desde=req.query.desde || 0;
+    desde=Number(desde);
+    let hasta=req.query.hasta || 6;
+    hasta=Number(hasta);
+
+        Usuario.find({estado:true}).skip(desde).limit(hasta)
+            .exec((err,usuarios)=>{
+
+                if(err){
+
+                 res.status(400).json({
+
+                         ok: false
+                     }
+                 )
+
+                }
+       Usuario.count({estado:true},(err,conteo)=> {
+           res.json({
+                   ok: true,
+                   usuarios,
+                    conteo
+               }
+           )
+
+           }
+       )
+
+            });
+
 });
 
 app.post('/usuario', function(req, res) {
@@ -18,22 +49,25 @@ app.post('/usuario', function(req, res) {
         nombre:body.nombre,
         email:body.email,
         password:bcrypt.hashSync(body.password,10),
-        roles:body.rol,
-        matricula:body.matricula
+        role:body.role,
+        estado:body.estado,
+        matricula:body.matricula,
+        img:body.img,
+        google:body.google
+
     });
 
     // User es la respuesta de lo que se grabo
     usuario.save((err,user)=>{
 
         if( err ){
-
-        return  res.status(400).json({
+            return  res.status(400).json({
 
                 ok:false,
                  err
 
             });
-        }
+        };
      res.json({
 
          ok:true,
@@ -68,19 +102,79 @@ app.post('/usuario', function(req, res) {
 app.put('/usuario/:id', function(req, res) {
 
     let id=req.params.id;
-    res.json({
+    let body=_.pick( req.body, [ 'nombre', 'email', 'img', 'role', 'estado']);
+    Usuario.findByIdAndUpdate(id,body,{new:true,runValidators:true}, (err, usuarioDB)=>{
 
-        id
+        if(err){
+           return res.status(400).json({
+
+                ok:false,
+               err
+            });
+
+        }
+
+        res.json({
+
+            ok:true,
+            usuario:usuarioDB
 
     });
 });
+});
+app.delete('/usuario/:id', function(req, res) {
+    let id =req.params.id;
+    
+    Usuario.findByIdAndUpdate(id,{estado:false}, {new:true}, (err,userdelete)=>{
+        if(err){
+            return res.status(400).json({
 
-app.delete('/usuario', function(req, res) {
-    res.json('Get Usuario')
+                          err
+
+                      })}
+       
+        res.json(
+            {
+                status:"ok",
+                userdelete
+
+            }
+        )
+        
+        
+    });
+    
+    
+    
+    
+    
+    
+    
+//==================================================
+// Instruccion para eliminar todo el objeto
+
+    // Usuario.findByIdAndDelete(id,(err,userdelete)=>{
+    //       if(err){
+    //
+    //           return res.status(400).json({
+    //
+    //               err
+    //
+    //           })
+    //
+    //       }
+    //       if(!userdelete) {
+    //           res.status(400).json({
+    //                   ok: true,
+    //                   err:{
+    //                       message:"usuario no existe"
+    //                   }
+    //               }
+    //           )
+    //       }
+    // });
 });
 
-app.get('/usuario', function(req, res) {
-    res.json('Get Usuario')
-});
+
 
 module.exports=app;

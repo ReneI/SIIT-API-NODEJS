@@ -20,7 +20,7 @@ app.use(require('./routes/usuarios'));
 
 mongoose.connect('mongodb://localhost:27017/cafe',(err,res)=>{
     if(err) throw err;
-    console.log('Conectado con exto');
+    console.log('Conectado con exito');
 
 });
 
@@ -29,4 +29,4 @@ app.listen(process.env.PORT,()=>{
 
     console.log("Probando el puerto");
 
-})
+});

@@ -36,8 +36,8 @@ Modelos
  
 
 ### delete 
-cambiar la bandera de estado a false, permite no se debe eliminar registros solamente cambiar de true a false ya
-romperia la caracteristica de integridad
+cambiar la bandera de estado a false,no se debe eliminar registros solamente cambiar de true a false ya
+romperia la caracteristica de integridad.
 
 # Siguientes cambios
 - Los demas modelos

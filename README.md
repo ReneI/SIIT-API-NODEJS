@@ -14,6 +14,10 @@ Modelos
 
 --------------------
 
+## 
+para pruebas instalar postman e introducir noddgoey.herokuapp.com/usuario
+- Ejecutar algun metodo que no requiera el id del usuario por ejemplo post o get para lectura 
+
 ## Guia de uso
 
  En servidor a produccion https://noddgoey.herokuapp.com/usuario/:id

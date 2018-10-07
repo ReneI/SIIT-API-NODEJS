@@ -1,9 +1,9 @@
 
  SIIT-API-NODEJS
 
-Modelo 
+Modelos
 -------------------
-
+  Usuario
  - Matricula
  - password (con encriptacion) sin posibilidad de hacer update del
    password por el momento por seguridad solamente con un token.

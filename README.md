@@ -8,7 +8,7 @@ Modelos
  - password (con encriptacion) sin posibilidad de hacer update del
    password por el momento por seguridad solamente con un token.
  - Email
- - google (token para inicio de sesion con cuenta de google)
+ - google (token para inicio de sesion con cuenta de google sin password ni matricula)
  - img
  - role (ADMIN, ALUM, MASTER) sin posibilidad de hacer update sin token
 

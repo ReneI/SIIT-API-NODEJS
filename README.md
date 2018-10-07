@@ -40,8 +40,9 @@ cambiar la bandera de estado a false, permite no se debe eliminar registros sola
 romperia la caracteristica de integridad
 
 # Siguientes cambios
-Los demas modelos
-Token de sesion 
+- Los demas modelos
+- Token de sesion 
+- Recuperar password
 #### expiracion de la sesion 
 
 
